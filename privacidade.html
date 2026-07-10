@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Política de Privacidade | Leblon</title>
+<meta name="description" content="Política de Privacidade do Leblon — como coletamos, usamos e protegemos seus dados, em conformidade com a LGPD." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="https://raw.githubusercontent.com/leblonapp/Leblon/refs/heads/main/Icon-Leblon.png" />
+<style>
+  :root{
+    --ink:#03014C; --ink-2:#0A0838; --brand:#FF4800; --brand-600:#E03F00;
+    --brand-tint:#FFF1EC; --paper:#fff; --mist:#F6F7FB; --line:#E7E8F0;
+    --muted:#5B5B73; --text:#15132E;
+    --container:860px;
+    --shadow-sm:0 1px 2px rgba(3,1,76,.06);
+    --shadow:0 1px 2px rgba(3,1,76,.06), 0 12px 32px rgba(3,1,76,.08);
+    --r:18px;
+    --ease:cubic-bezier(.22,.61,.36,1);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',system-ui,sans-serif;color:var(--text);background:var(--paper);line-height:1.6;-webkit-font-smoothing:antialiased}
+  h1,h2,h3,.display{font-family:'Inter Tight','Inter',sans-serif;letter-spacing:-.02em;line-height:1.15;color:var(--ink)}
+  a{color:var(--brand);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .container{max-width:var(--container);margin:0 auto;padding:0 24px}
+
+  header.nav{background:var(--ink);padding:0}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:72px;max-width:1200px;margin:0 auto;padding:0 24px}
+  .logo{font-family:'Inter Tight';font-weight:800;font-size:22px;letter-spacing:-.03em;color:#fff;display:flex;align-items:center;gap:8px}
+  .logo .dot{width:10px;height:10px;border-radius:50%;background:var(--brand);display:inline-block}
+  .back{color:rgba(255,255,255,.75);font-size:14px;font-weight:600}
+  .back:hover{color:#fff}
+
+  .hero-bar{background:radial-gradient(120% 160% at 80% 0%, #14104f 0%, var(--ink) 45%, var(--ink-2) 100%);color:#fff;padding:64px 0 48px}
+  .hero-bar .eyebrow{display:inline-block;font-weight:600;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#fff;background:rgba(255,72,0,.25);padding:6px 14px;border-radius:999px;margin-bottom:16px}
+  .hero-bar h1{color:#fff;font-size:clamp(28px,5vw,42px);font-weight:800;margin-bottom:10px}
+  .hero-bar p{color:rgba(255,255,255,.7);font-size:15px}
+
+  main{padding:56px 0 88px}
+  .toc{background:var(--mist);border:1px solid var(--line);border-radius:var(--r);padding:22px 26px;margin-bottom:40px}
+  .toc h2{font-size:14px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:12px}
+  .toc ol{padding-left:20px;display:grid;gap:6px;font-size:14px}
+  .toc a{color:var(--ink);font-weight:500}
+  .toc a:hover{color:var(--brand)}
+
+  article section{margin-bottom:38px;scroll-margin-top:24px}
+  article h2{font-size:22px;margin-bottom:12px;padding-top:4px;border-top:1px solid var(--line);padding-top:16px}
+  article section:first-of-type h2{border-top:0;padding-top:0}
+  article p{color:var(--text);font-size:15.5px;margin-bottom:12px}
+  article ul{padding-left:20px;margin-bottom:12px}
+  article li{color:var(--text);font-size:15.5px;margin-bottom:6px}
+  article strong{color:var(--ink)}
+  .table-wrap{overflow-x:auto;margin:16px 0}
+  table{width:100%;border-collapse:collapse;font-size:14px;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+  th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line)}
+  th{background:var(--mist);font-family:'Inter Tight';font-weight:700;color:var(--ink);font-size:13px;text-transform:uppercase;letter-spacing:.04em}
+  tr:last-child td{border-bottom:0}
+  .callout{background:var(--brand-tint);border-radius:14px;padding:18px 20px;font-size:14.5px;color:var(--ink);margin-bottom:12px}
+  .callout strong{color:var(--brand-600)}
+  .contact-card{background:var(--ink);color:#fff;border-radius:var(--r);padding:28px;margin-top:48px}
+  .contact-card h3{color:#fff;font-size:18px;margin-bottom:8px}
+  .contact-card p{color:rgba(255,255,255,.7);font-size:14.5px;margin-bottom:4px}
+  .contact-card a{color:#fff;font-weight:600}
+
+  footer{background:var(--ink);padding:36px 0;margin-top:0}
+  .foot-links{display:flex;flex-wrap:wrap;gap:18px;justify-content:center;margin-bottom:14px}
+  .foot-links a{color:rgba(255,255,255,.85);font-size:14px;font-weight:600}
+  .foot-links a:hover{color:#fff}
+  .foot-bottom{text-align:center;color:rgba(255,255,255,.45);font-size:13px}
+
+  @media(max-width:680px){
+    .hero-bar{padding:48px 0 36px}
+    main{padding:40px 0 64px}
+    article h2{font-size:19px}
+  }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="./index.html" class="logo"><span class="dot"></span>Leblon</a>
+    <a class="back" href="./index.html">← Voltar ao site</a>
+  </div>
+</header>
+
+<section class="hero-bar">
+  <div class="container">
+    <span class="eyebrow">LGPD · Lei nº 13.709/2018</span>
+    <h1>Política de Privacidade</h1>
+    <p>Última atualização: julho de 2026 · Leblon Tecnologia Ltda.</p>
+  </div>
+</section>
+
+<main>
+  <div class="container">
+
+    <div class="toc">
+      <h2>Nesta página</h2>
+      <ol>
+        <li><a href="#introducao">1. Introdução</a></li>
+        <li><a href="#dados-coletados">2. Quais dados coletamos</a></li>
+        <li><a href="#finalidade">3. Para que usamos seus dados</a></li>
+        <li><a href="#compartilhamento">4. Com quem compartilhamos</a></li>
+        <li><a href="#base-legal">5. Base legal para o tratamento</a></li>
+        <li><a href="#retencao">6. Por quanto tempo guardamos os dados</a></li>
+        <li><a href="#seguranca">7. Como protegemos seus dados</a></li>
+        <li><a href="#direitos">8. Seus direitos como titular (LGPD)</a></li>
+        <li><a href="#criancas">9. Público-alvo e menores de idade</a></li>
+        <li><a href="#cookies">10. Cookies e tecnologias semelhantes</a></li>
+        <li><a href="#alteracoes">11. Alterações nesta política</a></li>
+        <li><a href="#contato">12. Contato e encarregado de dados</a></li>
+      </ol>
+    </div>
+
+    <article>
+
+      <section id="introducao">
+        <h2>1. Introdução</h2>
+        <p>Esta Política de Privacidade descreve como o <strong>Leblon</strong> (aplicativo e site, operados por <strong>Leblon Tecnologia Ltda.</strong>) coleta, usa, armazena, compartilha e protege os dados pessoais de quem usa nossa plataforma para contratar ou oferecer serviços, em conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018 — LGPD).</p>
+        <p>Ao criar uma conta ou usar o Leblon, você concorda com esta política. Se você não concordar com algum ponto, pedimos que não utilize a plataforma.</p>
+      </section>
+
+      <section id="dados-coletados">
+        <h2>2. Quais dados coletamos</h2>
+        <p>Para viabilizar o marketplace, a verificação de identidade e os pagamentos, coletamos as seguintes categorias de dados:</p>
+        <div class="table-wrap">
+          <table>
+            <tr><th>Categoria</th><th>Dados</th></tr>
+            <tr><td>Identificação</td><td>Nome completo, CPF/RG, e-mail, telefone</td></tr>
+            <tr><td>Localização</td><td>Endereço e localização aproximada (para exibir serviços perto de você)</td></tr>
+            <tr><td>Imagem</td><td>Foto de perfil e selfie para verificação de identidade (KYC)</td></tr>
+            <tr><td>Financeiros</td><td>Dados bancários necessários para recebimento e pagamento via Asaas</td></tr>
+            <tr><td>Uso da plataforma</td><td>Histórico de serviços contratados ou prestados e mensagens trocadas no chat</td></tr>
+          </table>
+        </div>
+        <p>Não armazenamos os números completos de cartão de crédito — esse processamento é feito diretamente pelo nosso parceiro de pagamentos.</p>
+      </section>
+
+      <section id="finalidade">
+        <h2>3. Para que usamos seus dados</h2>
+        <ul>
+          <li><strong>Matching:</strong> conectar quem precisa de um serviço a prestadores disponíveis na região.</li>
+          <li><strong>Verificação de identidade:</strong> confirmar quem você é antes de liberar seu perfil na plataforma.</li>
+          <li><strong>Pagamentos:</strong> processar cobranças e repasses via Asaas e, futuramente, outros gateways de pagamento.</li>
+          <li><strong>Prevenção de fraudes:</strong> detectar e evitar uso indevido da plataforma.</li>
+          <li><strong>Melhoria do produto:</strong> entender como o Leblon é usado para aprimorar a experiência.</li>
+        </ul>
+      </section>
+
+      <section id="compartilhamento">
+        <h2>4. Com quem compartilhamos</h2>
+        <p>Compartilhamos dados apenas com parceiros essenciais para o funcionamento do serviço:</p>
+        <ul>
+          <li><strong>Asaas</strong> — processamento de pagamentos e repasses financeiros.</li>
+          <li><strong>Firebase / Google Cloud</strong> — infraestrutura, autenticação e armazenamento de dados.</li>
+          <li><strong>Didit</strong> — verificação de identidade (KYC).</li>
+        </ul>
+        <div class="callout"><strong>Importante:</strong> não vendemos seus dados pessoais a terceiros para fins de publicidade. O Leblon não exibe anúncios nem utiliza redes de publicidade.</div>
+      </section>
+
+      <section id="base-legal">
+        <h2>5. Base legal para o tratamento</h2>
+        <p>Tratamos seus dados com base na execução do contrato entre você e o Leblon (art. 7º, V, LGPD), no cumprimento de obrigação legal ou regulatória — por exemplo, regras de prevenção à lavagem de dinheiro exigidas para pagamentos — e no legítimo interesse em manter a plataforma segura e funcional.</p>
+      </section>
+
+      <section id="retencao">
+        <h2>6. Por quanto tempo guardamos os dados</h2>
+        <p>Mantemos seus dados enquanto sua conta estiver ativa e, após o encerramento, por até <strong>5 (cinco) anos</strong>, prazo necessário para cumprir obrigações legais, fiscais e regulatórias (incluindo as relacionadas a pagamentos). Após esse período, os dados são eliminados ou anonimizados, salvo exigência legal em contrário.</p>
+      </section>
+
+      <section id="seguranca">
+        <h2>7. Como protegemos seus dados</h2>
+        <p>Adotamos medidas técnicas e organizacionais para proteger seus dados, incluindo criptografia em trânsito e em repouso, controle de acesso e infraestrutura provida por Firebase/Google Cloud. O processamento financeiro é feito pelo Asaas, e o Leblon não armazena dados de cartão de crédito.</p>
+      </section>
+
+      <section id="direitos">
+        <h2>8. Seus direitos como titular (LGPD)</h2>
+        <p>Você pode, a qualquer momento, solicitar:</p>
+        <ul>
+          <li><strong>Acesso</strong> aos dados que temos sobre você;</li>
+          <li><strong>Correção</strong> de dados incompletos, inexatos ou desatualizados;</li>
+          <li><strong>Portabilidade</strong> dos seus dados a outro fornecedor de serviço;</li>
+          <li><strong>Exclusão</strong> dos dados tratados com seu consentimento, observadas as exceções legais de retenção.</li>
+        </ul>
+        <p>Para exercer qualquer um desses direitos, entre em contato pelo e-mail informado na seção 12.</p>
+      </section>
+
+      <section id="criancas">
+        <h2>9. Público-alvo e menores de idade</h2>
+        <p>O Leblon é destinado a <strong>maiores de 18 anos</strong>. Não coletamos intencionalmente dados de menores de idade. Se identificarmos uma conta criada por um menor, ela será encerrada e os dados eliminados.</p>
+      </section>
+
+      <section id="cookies">
+        <h2>10. Cookies e tecnologias semelhantes</h2>
+        <p>Nosso site e aplicativo podem usar cookies e tecnologias semelhantes para autenticação, funcionamento básico e análise de uso, sempre respeitando as finalidades descritas nesta política.</p>
+      </section>
+
+      <section id="alteracoes">
+        <h2>11. Alterações nesta política</h2>
+        <p>Podemos atualizar esta Política de Privacidade periodicamente. Alterações relevantes serão comunicadas dentro do aplicativo ou por e-mail, com a data de atualização revisada no topo desta página.</p>
+      </section>
+
+      <section id="contato">
+        <h2>12. Contato e encarregado de dados</h2>
+        <p>Dúvidas sobre esta política ou sobre o tratamento dos seus dados podem ser enviadas para o e-mail de suporte abaixo.</p>
+      </section>
+
+    </article>
+
+    <div class="contact-card">
+      <h3>Fale com a gente</h3>
+      <p>Leblon Tecnologia Ltda.</p>
+      <p>E-mail: <a href="mailto:suporte@leblonapp.com">suporte@leblonapp.com</a></p>
+      <p>Site: <a href="https://leblonapp.com">leblonapp.com</a></p>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container foot-links">
+    <a href="./index.html">Início</a>
+    <a href="./termos.html">Termos e Condições</a>
+    <a href="./privacidade.html">Política de Privacidade</a>
+    <a href="mailto:suporte@leblonapp.com">Suporte</a>
+  </div>
+  <p class="foot-bottom">© 2026 Leblon Tecnologia Ltda. · Feito no Brasil 🇧🇷</p>
+</footer>
+
+</body>
+</html>
